@@ -1883,8 +1883,38 @@ abstract class AppLocalizations {
   /// No description provided for @shareMessage.
   ///
   /// In en, this message translates to:
-  /// **'Pehle bachao, phir kharcho — I\'m building the savings habit with PehlaPaisa.'**
-  String get shareMessage;
+  /// **'Pehle bachao, phir kharcho — I\'m building the savings habit with PehlaPaisa. Free app: {link}'**
+  String shareMessage(String link);
+
+  /// No description provided for @shareCardOnPlay.
+  ///
+  /// In en, this message translates to:
+  /// **'Free on Google Play'**
+  String get shareCardOnPlay;
+
+  /// No description provided for @shareCardFree.
+  ///
+  /// In en, this message translates to:
+  /// **'Free app · English & Hindi'**
+  String get shareCardFree;
+
+  /// No description provided for @settingsInvite.
+  ///
+  /// In en, this message translates to:
+  /// **'Invite a friend'**
+  String get settingsInvite;
+
+  /// No description provided for @settingsInviteDesc.
+  ///
+  /// In en, this message translates to:
+  /// **'Share PehlaPaisa on WhatsApp or anywhere'**
+  String get settingsInviteDesc;
+
+  /// No description provided for @inviteMessage.
+  ///
+  /// In en, this message translates to:
+  /// **'Salary aate hi pehle bachao, phir kharcho 💰\nPehlaPaisa try karo — har mahine savings pakki. Free hai, Hindi mein bhi:\n{link}'**
+  String inviteMessage(String link);
 
   /// No description provided for @shareFailed.
   ///

@@ -9,7 +9,7 @@ This report lists only what was actually run. It also states plainly what was **
 | Check | Result |
 |---|---|
 | `flutter analyze` | **0 issues** |
-| Automated tests (`flutter test`) | **653 passed, 0 failed** (17 skipped, see note) — version 1.4.0 |
+| Automated tests (`flutter test`) | **664 passed, 0 failed** (18 skipped: optional screenshot/store-image generators) — version 1.5.0 |
 | On-device automated tests (`integration_test`) on Realme RMX3943 | **Passed**: full flow + UPI app detection (12 Nov 2026, version 1.1.3 code) |
 | Android release build (signed App Bundle + per-ABI APKs) | **Built** |
 | Install + launch of the release build on a real phone | **Passed** (no crashes logged) |

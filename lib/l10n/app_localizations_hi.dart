@@ -1101,8 +1101,27 @@ class AppLocalizationsHi extends AppLocalizations {
   }
 
   @override
-  String get shareMessage =>
-      'पहले बचाओ, फिर खर्चो — मैं PehlaPaisa के साथ बचत की आदत बना रहा/रही हूँ।';
+  String shareMessage(String link) {
+    return 'पहले बचाओ, फिर खर्चो — मैं PehlaPaisa के साथ बचत की आदत बना रहा/रही हूँ। मुफ़्त ऐप: $link';
+  }
+
+  @override
+  String get shareCardOnPlay => 'Google Play पर मुफ़्त';
+
+  @override
+  String get shareCardFree => 'मुफ़्त ऐप · हिंदी और English';
+
+  @override
+  String get settingsInvite => 'दोस्त को बुलाएँ';
+
+  @override
+  String get settingsInviteDesc =>
+      'PehlaPaisa को WhatsApp या कहीं भी शेयर करें';
+
+  @override
+  String inviteMessage(String link) {
+    return 'सैलरी आते ही पहले बचाओ, फिर खर्चो 💰\nPehlaPaisa आज़माओ — हर महीने बचत पक्की। मुफ़्त है, हिंदी में भी:\n$link';
+  }
 
   @override
   String get shareFailed => 'तस्वीर नहीं बन पाई। फिर से कोशिश करें।';

@@ -8,13 +8,13 @@ Everything needed to publish on **Google Play** and the **Apple App Store**. Cop
 
 | Field | Value |
 |---|---|
-| App name | **PehlaPaisa – Save First Budget** (Play limit: 30 characters) |
+| App name | **PehlaPaisa: Budget & Savings** (28/30). Puts the two most-searched words, *budget* and *savings*, in the title, which Play weighs most. |
 | App Store name / subtitle | **PehlaPaisa** / **Pehle bachao, phir kharcho** (subtitle limit: 30 characters) |
 | Package / Bundle ID | `com.pehlapaisa.app` (Android and iOS) |
 | Category | **Finance** |
 | Price | Free, contains ads (Google AdMob), no in-app purchases |
 | Languages | English, Hindi |
-| Version | 1.4.0 (build 11) |
+| Version | 1.5.0 (build 12) |
 | Privacy policy URL | https://mallanagowda63.github.io/privacy.html (live, from `website/`) |
 | Website (developer) | https://mallanagowda63.github.io (serves `app-ads.txt` for AdMob) |
 | Support email | infotrustifyx@gmail.com |
@@ -23,8 +23,8 @@ Everything needed to publish on **Google Play** and the **Apple App Store**. Cop
 
 ## 2. Texts (English)
 
-**Short description** (Play, 80 characters max):
-> Save first, then spend. Budget with glowing glasses — simple, private, works offline.
+**Short description** (Play, 80 characters max, 77 used):
+> Savings app in Hindi & English: save first on salary day, then spend. Simple.
 
 **Promotional text** (App Store, 170 characters max):
 > Fill your Savings glass first on salary day, then spend from Rent, Food, Travel and Fun glasses. Private, works offline, made for India.
@@ -32,7 +32,9 @@ Everything needed to publish on **Google Play** and the **Apple App Store**. Cop
 **Full description:**
 > **Pehle bachao, phir kharcho — save first, then spend.**
 >
-> PehlaPaisa helps you build the "pay yourself first" habit, even on a small income. Your money becomes glowing glasses on a shelf.
+> PehlaPaisa is a simple **budget planner and savings app** for India, in **Hindi and English**. It helps you build the "pay yourself first" habit, even on a small salary of ₹5,000–₹30,000 a month. Your money becomes glowing glasses on a shelf, so you always see what's left.
+>
+> Made for first jobs, students with a stipend, and anyone whose salary runs out before the month does. No complicated expense tracker, no SMS reading — just *paisa bachao* first, then spend calmly.
 >
 > 🪙 **Savings first.** On salary day, fill your Savings glass first. Then Rent, Food, Travel and Fun fill up with what's left.
 > 🫙 **See what's left.** Every glass shows exactly how much you can still spend. Spending drains the glass. Savings is never used to cover other spending.
@@ -48,15 +50,17 @@ Everything needed to publish on **Google Play** and the **Apple App Store**. Cop
 >
 > General money tips are for learning only. This is not financial advice.
 
-**Keywords** (App Store, 100 characters max):
-> budget,savings,expense tracker,money,UPI,salary,pocket money,hindi,personal finance,goals
+**Keywords** (App Store, 100 characters max, 97 used):
+> budget,savings,expense tracker,salary,money manager,hindi,paisa,bachat,UPI,goals,spending,planner
+
+**Search words this listing targets (Play has no keyword field; it reads the title, short and full description):** budget app, savings app, budget app in Hindi, expense tracker, money manager, salary planner, paisa bachao, bachat. Use them naturally — Google penalises keyword stuffing.
 
 ---
 
 ## 3. Texts (Hindi — हिंदी)
 
-**Short description:**
-> पहले बचाओ, फिर खर्चो। चमकते गिलासों से आसान बजट — निजी और ऑफ़लाइन।
+**Short description** (75/80):
+> पहले बचाओ, फिर खर्चो: सैलरी पर पहले बचत, फिर खर्च। आसान बजट और सेविंग्स ऐप।
 
 **Full description:**
 > **पहले बचाओ, फिर खर्चो।**

@@ -310,7 +310,12 @@
   "shareGoalSub": "{amount} बचाए",
   "shareGoalSubHidden": "पूरा भर गया 🎉",
   "shareBadgeTitle": "बैज मिला: {badge}",
-  "shareMessage": "पहले बचाओ, फिर खर्चो — मैं PehlaPaisa के साथ बचत की आदत बना रहा/रही हूँ।",
+  "shareMessage": "पहले बचाओ, फिर खर्चो — मैं PehlaPaisa के साथ बचत की आदत बना रहा/रही हूँ। मुफ़्त ऐप: {link}",
+  "shareCardOnPlay": "Google Play पर मुफ़्त",
+  "shareCardFree": "मुफ़्त ऐप · हिंदी और English",
+  "settingsInvite": "दोस्त को बुलाएँ",
+  "settingsInviteDesc": "PehlaPaisa को WhatsApp या कहीं भी शेयर करें",
+  "inviteMessage": "सैलरी आते ही पहले बचाओ, फिर खर्चो 💰\nPehlaPaisa आज़माओ — हर महीने बचत पक्की। मुफ़्त है, हिंदी में भी:\n{link}",
   "shareFailed": "तस्वीर नहीं बन पाई। फिर से कोशिश करें।",
 
   "settingsTitle": "सेटिंग्स",

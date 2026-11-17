@@ -15,6 +15,8 @@ class AppSettings {
     this.showAmountsOnShare = false,
     this.alertedKeys = const [],
     this.dismissedAlerts = const [],
+    this.reviewPromptCount = 0,
+    this.lastReviewPromptAt,
   });
 
   final AppThemeMode themeMode;
@@ -42,6 +44,10 @@ class AppSettings {
   /// Warnings the user closed with ✕ (alert keys, see BudgetAlert.key).
   final List<String> dismissedAlerts;
 
+  /// How often the store's rating popup was requested, and when last.
+  final int reviewPromptCount;
+  final DateTime? lastReviewPromptAt;
+
   int get reminderHour => reminderMinutes ~/ 60;
   int get reminderMinute => reminderMinutes % 60;
 
@@ -57,6 +63,8 @@ class AppSettings {
     bool? showAmountsOnShare,
     List<String>? alertedKeys,
     List<String>? dismissedAlerts,
+    int? reviewPromptCount,
+    DateTime? lastReviewPromptAt,
   }) {
     return AppSettings(
       themeMode: themeMode ?? this.themeMode,
@@ -72,6 +80,8 @@ class AppSettings {
       showAmountsOnShare: showAmountsOnShare ?? this.showAmountsOnShare,
       alertedKeys: alertedKeys ?? this.alertedKeys,
       dismissedAlerts: dismissedAlerts ?? this.dismissedAlerts,
+      reviewPromptCount: reviewPromptCount ?? this.reviewPromptCount,
+      lastReviewPromptAt: lastReviewPromptAt ?? this.lastReviewPromptAt,
     );
   }
 
@@ -87,6 +97,8 @@ class AppSettings {
     'showAmountsOnShare': showAmountsOnShare,
     'alertedKeys': alertedKeys,
     'dismissedAlerts': dismissedAlerts,
+    'reviewPromptCount': reviewPromptCount,
+    'lastReviewPromptAt': lastReviewPromptAt?.millisecondsSinceEpoch,
   };
 
   factory AppSettings.fromMap(Map<String, dynamic> m) => AppSettings(
@@ -108,5 +120,11 @@ class AppSettings {
     dismissedAlerts: (m['dismissedAlerts'] as List<dynamic>? ?? const [])
         .map((e) => e.toString())
         .toList(),
+    reviewPromptCount: (m['reviewPromptCount'] as num?)?.toInt() ?? 0,
+    lastReviewPromptAt: m['lastReviewPromptAt'] == null
+        ? null
+        : DateTime.fromMillisecondsSinceEpoch(
+            (m['lastReviewPromptAt'] as num).toInt(),
+          ),
   );
 }

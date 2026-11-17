@@ -8,6 +8,7 @@ import '../../../app/router.dart';
 import '../../../app/theme.dart';
 import '../../../core/money.dart';
 import '../../jars/presentation/widgets/glass_jar.dart';
+import '../../growth/review_prompt.dart';
 import '../../share/domain/share_card_data.dart';
 import '../data/badge.dart';
 import '../domain/celebration.dart';
@@ -53,6 +54,12 @@ class _CelebrationHostState extends ConsumerState<CelebrationHost> {
     ref.read(celebrationQueueProvider.notifier).pop();
     if (share != null) {
       await ref.read(routerProvider).push(Routes.share, extra: share);
+      return;
+    }
+    // A happy moment just ended: maybe ask for a store rating, but only
+    // when no other celebration is waiting.
+    if (mounted && ref.read(celebrationQueueProvider).items.isEmpty) {
+      await ref.read(reviewPrompterProvider)();
     }
   }
 

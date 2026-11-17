@@ -9,6 +9,7 @@ import 'package:intl/intl.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../../growth/app_links.dart';
 import '../../../app/l10n.dart';
 import '../../../app/router.dart';
 import '../../../app/state/budget_controller.dart';
@@ -299,6 +300,19 @@ class SettingsScreen extends ConsumerWidget {
           ),
 
           header(''),
+          Card(
+            child: ListTile(
+              key: const Key('settings_invite'),
+              leading: const Icon(Icons.person_add_alt_1_outlined),
+              title: Text(l.settingsInvite),
+              subtitle: Text(l.settingsInviteDesc),
+              trailing: const Icon(Icons.share_outlined),
+              onTap: () => SharePlus.instance.share(
+                ShareParams(text: l.inviteMessage(AppLinks.download)),
+              ),
+            ),
+          ),
+          const SizedBox(height: 8),
           Card(
             child: ListTile(
               leading: const Icon(Icons.info_outline),

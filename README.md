@@ -204,3 +204,11 @@ PehlaPaisa shares general, educational money tips only. It does not give investm
 - **Live IDs:** Android App ID `ca-app-pub-1571944076824107~7964997688` (AndroidManifest). iOS is still on Google's test App ID — create the iOS app and ad units in AdMob before an App Store release.
 - **Tests:** widget and device tests replace every ad with a same-sized placeholder (`test/helpers/sample_ad.dart`), so layouts are checked with ads in place.
 - **app-ads.txt:** publish `google.com, pub-1571944076824107, DIRECT, f08c47fec0942fa0` at the root of the developer website listed on the store page.
+
+## Growth features
+
+- **Rate prompt** (`lib/features/growth/review_prompt.dart`): after a celebration closes (savings filled, badge, goal), the app may request Google's / Apple's in-app review popup. Rules (`ReviewPolicy`): not in the first 3 days, at most 3 times ever, at least 90 days apart, and only when no other celebration is waiting. The stores add their own limits, so the popup may not appear.
+- **Share cards** carry the download link: the share text ends with the Play Store link (`AppLinks.download`) and the card image shows "Free on Google Play".
+- **Invite a friend** (Settings): shares a Hinglish (or Hindi) message with the Play Store link through the phone's share sheet (WhatsApp, etc.).
+- **Store search words**: see STORE_LISTING.md (title "PehlaPaisa: Budget & Savings", keyword-rich short and full descriptions).
+

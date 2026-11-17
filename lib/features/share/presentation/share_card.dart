@@ -18,12 +18,16 @@ class ShareCardTexts {
     required this.subtitle,
     required this.appName,
     required this.tagline,
+    this.cta,
   });
 
   final String title;
   final String subtitle;
   final String appName;
   final String tagline;
+
+  /// Small line under the tagline telling viewers where to get the app.
+  final String? cta;
 }
 
 /// A beautiful, self-contained progress card: glass visual, the stat, the
@@ -200,6 +204,18 @@ class ShareCard extends StatelessWidget {
                       PPColors.savingsAmber.withValues(alpha: 0.9),
                     ),
                   ),
+                  if (texts.cta != null) ...[
+                    SizedBox(height: story ? 6 : 3),
+                    Text(
+                      texts.cta!,
+                      key: const Key('share_card_cta'),
+                      style: style(
+                        story ? 13 : 10,
+                        FontWeight.w500,
+                        PPColors.mutedText,
+                      ),
+                    ),
+                  ],
                 ],
               ),
             ),

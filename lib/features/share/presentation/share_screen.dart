@@ -6,6 +6,7 @@ import 'package:path_provider/path_provider.dart';
 import 'package:screenshot/screenshot.dart';
 import 'package:share_plus/share_plus.dart';
 
+import '../../growth/app_links.dart';
 import '../../../app/l10n.dart';
 import '../../ads/ads.dart';
 import '../../../app/state/budget_controller.dart';
@@ -72,6 +73,7 @@ class _ShareScreenState extends ConsumerState<ShareScreen> {
       subtitle: subtitle,
       appName: l.appName,
       tagline: l.tagline,
+      cta: AppLinks.isPlayStore ? l.shareCardOnPlay : l.shareCardFree,
     );
   }
 
@@ -94,7 +96,7 @@ class _ShareScreenState extends ConsumerState<ShareScreen> {
       await SharePlus.instance.share(
         ShareParams(
           files: [XFile(file.path, mimeType: 'image/png')],
-          text: l.shareMessage,
+          text: l.shareMessage(AppLinks.download),
         ),
       );
     } catch (_) {

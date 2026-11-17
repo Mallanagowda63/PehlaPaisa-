@@ -1105,8 +1105,26 @@ class AppLocalizationsEn extends AppLocalizations {
   }
 
   @override
-  String get shareMessage =>
-      'Pehle bachao, phir kharcho — I\'m building the savings habit with PehlaPaisa.';
+  String shareMessage(String link) {
+    return 'Pehle bachao, phir kharcho — I\'m building the savings habit with PehlaPaisa. Free app: $link';
+  }
+
+  @override
+  String get shareCardOnPlay => 'Free on Google Play';
+
+  @override
+  String get shareCardFree => 'Free app · English & Hindi';
+
+  @override
+  String get settingsInvite => 'Invite a friend';
+
+  @override
+  String get settingsInviteDesc => 'Share PehlaPaisa on WhatsApp or anywhere';
+
+  @override
+  String inviteMessage(String link) {
+    return 'Salary aate hi pehle bachao, phir kharcho 💰\nPehlaPaisa try karo — har mahine savings pakki. Free hai, Hindi mein bhi:\n$link';
+  }
 
   @override
   String get shareFailed => 'Couldn\'t create the image. Please try again.';
