@@ -1,0 +1,22 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - lib/l10n/app_localizations*.dart
+    - android/**
+    - ios/**
+  language:
+    strict-casts: false
+    strict-raw-types: true
+
+linter:
+  rules:
+    - prefer_single_quotes
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_final_locals
+    - avoid_print
+    - always_declare_return_types
+    - sort_child_properties_last
+    - use_super_parameters
